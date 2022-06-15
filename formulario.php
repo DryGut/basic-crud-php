@@ -3,8 +3,8 @@
     <label>Nome:
       <input type="text" name="nome"><br>
     </label>
-    <label>Prontuario:
-      <input type="text" name="prontuario"><br>
+    <label>Sobrenome:
+      <input type="text" name="sobrenome"><br>
     </label>
     <label>Livro:
       <input type="text" name="livro"><br>
@@ -19,7 +19,7 @@
   </fieldset>
    <? if(isset($_POST['cadastrar'])){
      require_once 'dbconfig.php';
-     $sql = "INSERT INTO registro (nome, prontuario, livro, autor, criado_em) VALUES ('".$_POST['nome']."', '".$_POST['prontuario']."', '".$_POST['livro']."', '".$_POST['autor']."', '".$_POST['criado_em']."')";
+     $sql = "INSERT INTO registro (nome, sobrenome, livro, autor, criado_em) VALUES ('".$_POST['nome']."', '".$_POST['sobrenome']."', '".$_POST['livro']."', '".$_POST['autor']."', '".$_POST['criado_em']."')";
 	  $db->exec($sql);
    }?>
 </form>
