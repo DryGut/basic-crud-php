@@ -2,7 +2,7 @@
   <tr>
     <th>ID</th>
     <th>Nome</th>
-    <th>Prontuario</th>
+    <th>sobrenome</th>
     <th>Livro</th>
     <th>Autor</th>
     <th>Data</th>
@@ -19,7 +19,7 @@
       echo "<tr>
         <td>".$row['id']."</td>
         <td>".$row['nome']."</td>
-        <td>".$row['prontuario']."</td>
+        <td>".$row['sobrenome']."</td>
         <td>".$row['livro']."</td>
         <td>".$row['autor']."</td>
         <td>".ExibirData($row['criado_em'])."</td>
